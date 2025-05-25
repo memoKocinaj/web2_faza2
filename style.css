@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+.all-content {
+  background: #f7f5f2;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #002642; /* Deep navy blue scrollbar */
+  border-radius: 10px;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+/* navbar */
+
+#navbar {
+  background-color: #002642; /* Deep navy blue navbar */
+  font-family: "Roboto", sans-serif;
+}
+#logo img {
+  border-radius: 10px;
+  width: 160px;
+  margin-left: 40px;
+}
+.navbar-nav {
+  margin-left: 50px;
+}
+.nav-item .nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white; /* White text for contrast */
+  margin-left: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover {
+  background: #f7f5f2;
+  border-radius: 5px;
+  color: #002642; /* Deep navy blue text on hover */
+}
+#navbar form button {
+  background: white;
+  color: #002642; /* Deep navy blue text */
+  border: 1px solid white;
+}
+/* navbar */
+/* home content */
+#home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/wedding-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  font-family: "Roboto", sans-serif;
+}
+.content {
+  padding-top: 210px;
+  margin-left: 56px;
+}
+.content h3 {
+  font-size: 50px;
+  color: white;
+}
+.content p {
+  margin-top: 10px;
+  color: white;
+}
+#btn {
+  width: 150px;
+  height: 36px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: #002642; /* Deep navy blue text */
+}
+#btn:hover {
+  background: #002642; /* Deep navy blue background on hover */
+  color: white;
+}
+/* home content */
+
+/* about */
+#about {
+  width: 100%;
+  height: 100vh;
+  background: #f7f5f2;
+  font-family: "Roboto", sans-serif;
+}
+#about .container {
+  padding-top: 70px;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading span {
+  color: #002642; /* Deep navy blue accent */
+}
+#about .card {
+  border-radius: 10px;
+}
+#about .card img {
+  border-radius: 10px;
+}
+#about-btn {
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #002642; /* Deep navy blue border */
+  color: #002642; /* Deep navy blue text */
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#about-btn:hover {
+  background: #002642; /* Deep navy blue background on hover */
+  color: white;
+}
+@media screen and (max-width: 982px) {
+  #about p {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 766px) {
+  #about p {
+    font-size: 15px;
+  }
+  #about {
+    height: 120vh;
+  }
+}
+mark {
+  background-color: orange !important;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+/* about */
+
+/* services */
+.services {
+  width: 100%;
+  background: #f7f5f2;
+  font-family: "Roboto", sans-serif;
+}
+.heading3 {
+  text-align: center;
+  font-size: 30px;
+  color: #002642; /* Deep navy blue accent */
+  font-weight: bold;
+  border-bottom: 2px solid #002642; /* Deep navy blue border */
+}
+#container2 {
+  margin-top: 20px;
+}
+.services .card {
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.services h3 {
+  color: #002642; /* Deep navy blue text */
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.services p {
+  font-size: 16px;
+  color: #002642; /* Deep navy blue text */
+  padding-top: 10px;
+}
+/* services */
+
+/* gallery */
+#gallery {
+  width: 100%;
+}
+#gallery h1 {
+  text-align: center;
+  color: black;
+  margin-top: 60px;
+  font-weight: bold;
+}
+#gallery h1 span {
+  color: #002642; /* Deep navy blue accent */
+}
+#gallery .card {
+  border-radius: 10px;
+}
+#gallery .card img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* gallery */
+
+/* contact */
+.contact {
+  width: 100%;
+  height: calc(100vh + 300px); /* Rrit lartësinë me 300px */
+  background: #f7f5f2;
+  padding-top: 70px;
+}
+
+.contact .container {
+  width: 100%;
+  height: calc(80vh + 300px); /* Rrit lartësinë me 300px */
+  background: white;
+  background: linear-gradient(
+    90deg,
+    white 80%,
+    #002642 20%
+  ); /* Deep navy blue gradient */
+  border-radius: 10px;
+}
+
+.heading6 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.heading6 span {
+  color: #002642; /* Deep navy blue accent */
+}
+
+.contact p {
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
+}
+
+.contact input {
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+#contact-btn {
+  width: 200px;
+  height: 36px;
+  border: none;
+  background: #002642; /* Deep navy blue background */
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#col {
+  width: 40%;
+  height: calc(56vh + 300px); /* Rrit lartësinë me 300px */
+  background: black;
+  margin-top: 78px;
+}
+
+.contact h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contact #col p {
+  font-size: 15px;
+  color: white;
+  margin-left: 13px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 766px) {
+  .contact .container {
+    background: white;
+  }
+
+  #col {
+    width: 100%;
+    background: #002642; /* Deep navy blue background */
+  }
+
+  .contact {
+    height: calc(150vh + 300px); /* Rrit lartësinë me 300px */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact input {
+    width: 250px;
+  }
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-radio,
+.input-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* blogs */
+.blogs {
+  width: 100%;
+  background: #f7f5f2;
+}
+.blogs h1 {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.blogs h1 span {
+  color: #002642; /* Deep navy blue accent */
+}
+.blogs .container {
+  margin-top: 60px;
+}
+.blogs h5 {
+  color: #002642; /* Deep navy blue text */
+}
+#blogbtn {
+  width: 200px;
+  height: 36px;
+  border: none;
+  color: white;
+  background: #002642; /* Deep navy blue background */
+  cursor: pointer;
+}
+
+/* blogs */
+
+/* footer */
+#footer {
+  width: 100%;
+  background: #002642; /* Deep navy blue background */
+  margin-top: 50px;
+}
+.footer-logo img {
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i {
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credite {
+  color: white;
+  margin-top: 20px;
+}
+.credite {
+  text-shadow: 0px 0px 1px black;
+}
+.credite a {
+  text-decoration: none;
+  color: white; /* White text for contrast */
+  font-weight: bold;
+}
+.credite a span {
+  color: white;
+}
+.copyright span {
+  color: white;
+  margin-left: 50px;
+  background-origin: content-box;
+}
+/* footer */
+
+html {
+  scroll-behavior: smooth;
+}
+.arrow {
+  position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+/* Drag and Drop Styling */
+#drag-drop {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#drag {
+  width: 100px;
+  padding: 10px;
+  background: #002642; /* Deep navy blue background */
+  color: white;
+  cursor: grab;
+  border-radius: 5px;
+}
+
+#drop {
+  width: 200px;
+  height: 100px;
+  margin: 20px auto;
+  border: 2px dashed #002642; /* Deep navy blue border */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f7f5f2;
+}
+
+/* Canvas Styling */
+#canvas-example {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#myCanvas {
+  background: #f7f5f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* SVG Styling */
+#svg-example {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#svg-example svg {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Multimedia Styling */
+#multimedia {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#multimedia audio,
+#multimedia video {
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#multimedia video {
+  background: #000;
+}
