@@ -184,6 +184,11 @@ if (isset($_GET['search'])) {
               <a class="nav-link" href="contact.php">Contact</a>
             </li>
           </ul>
+       
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -363,37 +368,59 @@ if (isset($_GET['search'])) {
     ?>
   </div>
 </div>
-    <!-- footer -->
-    <footer id="footer">
-      <div class="footer-logo text-center">
-        <img src="./images/logo.png" alt="Genti Production">
-      </div>
-      <div class="socail-links text-center">
-        <a href="https://twitter.com" target="_blank">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://facebook.com" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://youtube.com" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://pinterest.com" target="_blank">
-          <i class="fa-brands fa-pinterest-p"></i>
-        </a>
-      </div>
+  
+     <!-- footer -->
+<footer id="footer" class="container-fluid p-0">
+  <div class="container-fluid">
+    <div class="footer-logo text-center pt-4">
+      <img src="./images/logo.png" alt="Genti Production">
+    </div>
+    <div class="socail-links text-center py-3">
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter mx-2"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f mx-2"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram mx-2"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube mx-2"></i></a>
+      <a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p mx-2"></i></a>
+    </div>
 
-      <div class="credite text-center">
+     <div class="credite text-center">
         Designed By <a href="#"> Grupi 7</a>
       </div>
-      <div class="copyright text-center">
-        &copy; Copyright <strong><span>Genti Production</span></strong>. All Rights Reserved
+      <div class=" text-center">
+         <strong><span>Genti Production</span></strong>
       </div>
     </footer>
-    <!-- footer -->
+</footer>
+<!-- footer -->
+ <style>
+ 
+#footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: #002642;
+  color: white;
+}
+
+.all-content {
+  overflow-x: hidden;
+}
+
+.footer-logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+.socail-links a {
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.socail-links a:hover {
+  color: #002642;
+}
+
+ </style>
 
     <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="55px"></i></a>
     <script>
